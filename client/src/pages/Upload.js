@@ -8,7 +8,8 @@ export default function Upload() {
     const [successMsg, setSuccessMsg] = useState('');
     const [errMsg, setErrMsg] = useState('');
     const handleFileInputChange = (e) => {
-        const file = e.target.files[0];
+    
+        const file = e.target.files[0];//array of files
         previewFile(file);
         setSelectedFile(file);
         setFileInputState(e.target.value);
