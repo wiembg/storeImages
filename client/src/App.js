@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
 import Upload from './pages/Upload.js';
 import Home from './pages/Home.js';
+
 function App() {
     return (
         <div className="container">
@@ -22,6 +23,7 @@ function App() {
                 <Switch>
                     <Route component={Upload} path="/upload" />
                     <Route component={Home} path="/" />
+                
    
                 </Switch>
             </Router>

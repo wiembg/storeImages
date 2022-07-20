@@ -18,6 +18,9 @@ app.get('/api/images', async (req, res) => {
     const publicIds = resources.map((file) => file.public_id);
     res.send(publicIds);
 });
+
+   
+});
 app.post('/api/upload', async (req, res) => {
     try {
         const fileStr = req.body.data;
